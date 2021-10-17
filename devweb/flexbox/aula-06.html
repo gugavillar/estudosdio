@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula Prática 06</title>
+    <style>
+      .flex-container {
+        display: flex;
+        max-width: 400px;
+        height: 150px;
+        border: 1px solid black;
+      }
+      .item {
+        background: purple;
+        color: white;
+        font-size: 20px;
+        margin: 5px;
+        text-align: center;
+      }
+      .center {
+        align-items: center;
+      }
+      .flex-start {
+        align-items: flex-start;
+      }
+      .flex-end {
+        align-items: flex-end;
+      }
+      .strech {
+        align-items: stretch;
+      }
+      .column {
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>center</h1>
+      <div class="flex-container center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+      <h1>flex-start</h1>
+      <div class="flex-container flex-start">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+      <h1>flex-end</h1>
+      <div class="flex-container flex-end">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+      <h1>strech</h1>
+      <div class="flex-container strech">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+    </div>
+    <hr />
+    <div>
+      <h1>center</h1>
+      <div class="flex-container center column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+      <h1>flex-start</h1>
+      <div class="flex-container flex-start column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+      <h1>flex-end</h1>
+      <div class="flex-container flex-end column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+      <h1>strech</h1>
+      <div class="flex-container strech column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+    </div>
+  </body>
+</html>
