@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula Prática 07</title>
+    <style>
+      .flex-container {
+        max-width: 500px;
+        height: 450px;
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid black;
+      }
+      .item {
+        background: orangered;
+        margin: 10px;
+        /* height: 100px; */
+        width: 100px;
+        text-align: center;
+      }
+      .center {
+        align-content: center;
+      }
+      .flex-start {
+        align-content: flex-start;
+      }
+      .flex-end {
+        align-content: flex-end;
+      }
+      .space-between {
+        align-content: space-between;
+      }
+      .space-around {
+        align-content: space-around;
+      }
+      .strech {
+        align-content: stretch;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Center</h1>
+    <div class="flex-container center">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+    <h1>Strech</h1>
+    <div class="flex-container strech">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+    <h1>Flex-start</h1>
+    <div class="flex-container flex-start">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+    <h1>Flex-end</h1>
+    <div class="flex-container flex-end">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+    <h1>Space-around</h1>
+    <div class="flex-container space-around">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+    <h1>Space-between</h1>
+    <div class="flex-container space-between">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+  </body>
+</html>
